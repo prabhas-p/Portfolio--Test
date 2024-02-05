@@ -348,27 +348,26 @@
                             <div class="mc-field-group"><label for="mce-PHONE">Phone Number </label><input type="text"
                                     name="PHONE" class="REQ_CSS" id="mce-PHONE" value=""></div>
                             <div class="mc-address-group">
-                                <div class="mc-field-group"><label for="mce-ADDRESS-addr1">Address </label><input
-                                        type="text" maxlength="70" name="ADDRESS[addr1]" id="mce-ADDRESS-addr1" class=""
-                                        value=""></div>
+                                <div class="mc-field-group"><label for="mce-ADDRESS-addr1">Address <span
+                                            class="asterisk">*</span></label><input type="text" maxlength="70"
+                                        name="ADDRESS[addr1]" id="mce-ADDRESS-addr1" class="required" value=""></div>
                                 <div class="mc-field-group"><label for="mce-ADDRESS-addr2">Address Line 2</label><input
                                         type="text" maxlength="70" name="ADDRESS[addr2]" id="mce-ADDRESS-addr2"
                                         value=""></div>
                                 <div class="mc-address-fields-group">
                                     <div class="mc-field-group"><label for="mce-ADDRESS-city">City</label><input
                                             type="text" maxlength="40" name="ADDRESS[city]" id="mce-ADDRESS-city"
-                                            class="" value=""></div>
+                                            class="required" value=""></div>
                                     <div class="mc-field-group"><label
                                             for="mce-ADDRESS-state">State/Province/Region</label><input type="text"
-                                            maxlength="20" name="ADDRESS[state]" id="mceADDRESS-state" class=""
+                                            maxlength="20" name="ADDRESS[state]" id="mceADDRESS-state" class="required"
                                             value=""></div>
                                     <div class="mc-field-group"><label for="mce-ADDRESS-zip">Postal / Zip
                                             Code</label><input type="text" maxlength="10" name="ADDRESS[zip]"
-                                            id="mce-ADDRESS-zip" class="" value="">
-                                    </div>
+                                            id="mce-ADDRESS-zip" class="required" value=""></div>
                                 </div>
                                 <div class="mc-field-group"><label for="mce-ADDRESS-country">Country</label><select
-                                        name="ADDRESS[country]" id="mce-ADDRESS-country" class="">
+                                        name="ADDRESS[country]" id="mce-ADDRESS-country" class="required">
                                         <option value="Albania">Albania</option>
                                         <option value="Algeria">Algeria</option>
                                         <option value="Andorra">Andorra</option>
@@ -580,8 +579,7 @@
                                         <option value="Myanmar">Myanmar</option>
                                         <option value="Sao Tome and Principe">Sao Tome and Principe</option>
                                         <option value="South Georgia and the South Sandwich Islands">South Georgia and
-                                            the South
-                                            Sandwich Islands</option>
+                                            the South Sandwich Islands</option>
                                         <option value="Tajikistan">Tajikistan</option>
                                         <option value="United Kingdom">United Kingdom</option>
                                         <option value="Costa Rica">Costa Rica</option>
@@ -622,8 +620,7 @@
                             </div>
                             <div aria-hidden="true" style="position: absolute; left: -5000px;">
                                 /* real people should not fill this in and expect good things - do not remove this or
-                                risk form bot
-                                signups */
+                                risk form bot signups */
                                 <input type="text" name="b_ed26ebe64c96d704eddf5d137_917cf749e7" tabindex="-1" value="">
                             </div>
                             <div class="optionalParent">
@@ -638,8 +635,9 @@
                 <script type="text/javascript"
                     src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
                 <script
-                    type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[6] = 'MMERGE6'; ftypes[6] = 'address'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; fnames[7] = 'MMERGE7'; ftypes[7] = 'dropdown'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+                    type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
             </div>
+
 
             <!-- <div class="container">
                 <form id="form">
