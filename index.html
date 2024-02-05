@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhas -Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        #omg {
+            animation: round 2s infinite;
+        }
+
+        @keyframes round {
+            0% {
+                transform: translateY(50px);
+            }
+
+            50% {
+                transform: translateY(-50px);
+            }
+
+            100% {
+                transform: translateY(50px);
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 50px 50px 80px;
+        }
+
+        .firstsection>div {
+            width: 50%;
+        }
+
+        .leftsection {
+            font-size: 2.8rem;
+            margin-left: 20px;
+        }
+
+        .buttons {
+            padding: 50px 0;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightsection img {
+            margin-left: 200px;
+            width: 60%;
+        }
+
+        .text-color {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondsection {
+            display: flex;
+            margin: 10px 50px 50px 80px;
+        }
+
+        .secondsection div {
+            width: 50%;
+        }
+
+        .secondsection .summary p {
+            font-size: 20px;
+            margin-top: 60px;
+            text-align: justify;
+        }
+
+        .animate img {
+            margin-left: 80px;
+            width: 80%;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+        }
+
+        .footer-first {
+            font-size: 1.5rem;
+            color: #2a2a5a;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer-second ul li a {
+            padding-left: 520px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #2a2a5a;
+        }
+
+        /* form {
+            padding-left: 250px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type=text],
+        textarea {
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin: 6px 500px 16px 10px;
+        }
+
+        input[type=submit] {
+
+            padding: 12px;
+            background: #292c75;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 70px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            margin-left: 55px;
+        } */
+
+        .copyrights {
+            text-align: center;
+            color: gray;
+            padding: 20px 0;
+        }
+
+
+        /* Media Queries */
+        @media only screen and (max-width: 600px) {
+            nav {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .firstsection {
+                flex-direction: row;
+                margin: 50px 0;
+            }
+
+            .leftsection {
+                text-align: left;
+            }
+
+            .rightsection img {
+                margin: 0 20px 0 50px;
+                width: 60%;
+            }
+
+            .secondsection {
+                flex-direction: row;
+            }
+
+            .animate img {
+                margin: 0 50px 0 20px;
+                width: 80%;
+            }
+
+            footer {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .footer-first {
+                text-align: left;
+            }
+
+            .footer-second ul li a {
+                padding-left: 0;
+            }
+
+            form {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p id="home"></p>
+    <header>
+        <nav>
+            <div class="left">Prabhas's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#summari">Summary</a></li>
+                    <li><a href="https://prabhas-p.netlify.app/">Projects</a></li>
+                    <li><a href="#contactme">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, My name is <span class="text-color">Prabhas P</span>
+                <div>and I am <!-- Element to contain animated typing -->
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <button class="btn" onclick="downloadResume()">Download Resume</button>
+                        <button class="btn">Visit Github</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="rightsection"><img src="img.jpg" style="border-radius: 70%;" alt="No image"></div>
+        </section>
+
+        <hr>
+        <p id="summari"></p>
+        <h1 style="margin-left: 120px;">Summary</h1>
+        <section class="secondsection">
+            <div class="summary">
+                <p><i> "I am a proactive Undergraduate Student at Shree Medha Degree College, affiliated with VSKUB
+                        University, currently expanding my knowledge in computer science. Proficient in web development,
+                        including hosting live websites and fundamental database concepts. Well-versed in OOP principles
+                        through Java and Python programming languages. Skilled in developing C#.Net window-based
+                        applications and proficient in C programming. Adept at working with Operating Systems and
+                        creating engaging graphics using SVG and Canvas."</i></p>
+            </div>
+            <div class="animate"><img id="omg" src="pg.webp" alt="No image"></div>
+        </section>
+
+
+        <hr>
+        <p id="contactme"></p>
+        <h1 style="margin-left: 120px;">Contact Me</h1><br>
+        <section class="thirdsection">
+
+            <div id="mc_embed_shell">
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                    #mc_embed_signup {
+                        background: #fff;
+                        clear: left;
+                        font: 14px Helvetica, Arial, sans-serif;
+                        color: #0e0e1a;
+                        width: 600px;
+                        margin-left: 300px;
+                    }
+
+                    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                </style>
+                <div id="mc_embed_signup">
+                    <form
+                        action="https://gmail.us21.list-manage.com/subscribe/post?u=ed26ebe64c96d704eddf5d137&amp;id=917cf749e7&amp;f_id=0030f8e6f0"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                        target="_blank">
+                        <div id="mc_embed_signup_scroll">
+                            <h2>Subscribe</h2>
+                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span
+                                        class="asterisk">*</span></label><input type="email" name="EMAIL"
+                                    class="required email" id="mce-EMAIL" required="" value=""></div>
+                            <div class="mc-field-group"><label for="mce-FNAME">First Name </label><input type="text"
+                                    name="FNAME" class=" text" id="mce-FNAME" value=""></div>
+                            <div class="mc-field-group"><label for="mce-LNAME">Last Name </label><input type="text"
+                                    name="LNAME" class=" text" id="mce-LNAME" value=""></div>
+                            <div id="mce-responses" class="clear foot">
+                                <div class="response" id="mce-error-response" style="display: none;"></div>
+                                <div class="response" id="mce-success-response" style="display: none;"></div>
+                            </div>
+                            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                /* real people should not fill this in and expect good things - do not remove this or
+                                risk form bot
+                                signups */
+                                <input type="text" name="b_ed26ebe64c96d704eddf5d137_917cf749e7" tabindex="-1" value="">
+                            </div>
+                            <div class="optionalParent">
+                                <div class="clear foot">
+                                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
+                                        value="Subscribe">
+                                    <!-- <p style="margin: 0px auto;"><a href="http://eepurl.com/iJsZxc"
+                                            title="Mailchimp - email marketing made easy and fun"><span
+                                                style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
+                                                    class="refferal_badge"
+                                                    src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                                                    alt="Intuit Mailchimp"
+                                                    style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <script type="text/javascript"
+                    src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                <script
+                    type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+            </div>
+
+            <!-- <div class="container">
+                <form id="form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Name" placeholder="Your name.." required>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="Email" placeholder="Your email.." required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="Message"
+                        placeholder="Enter your remarks not more than 1000 characters..." rows="10" cols="100"
+                        required></textarea>
+
+                    <input type="submit" value="Submit" name="submit">
+                </form>
+            </div> -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Prabhas's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#summari">Summary</a></li>
+                    <li><a href="https://prabhas-p.netlify.app/">Projects</a></li>
+                    <li><a href="#contactme">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyrights">
+            Copyright &#169 prabhas-p.netlify.app | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Undergraduate Student', 'Web Developer'],
+            typeSpeed: 45,
+            loop: true,
+        });
+    </script>
+    
+    <!-- function downloadResume() {
+            // Replace 'resume.pdf' with the actual path to your PDF file
+            var pdfPath = 'Resume.pdf';
+            // Open the PDF in a new tab/window
+            window.open(pdfPath, '_blank');
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwQnbCMORodbP0VoETmBUSeRMLdQbUke7NOrorLJbbRNjpJKf1v64UkRgZu0Djtpb3k/exec';
+        const form = document.querySelector('#form');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            // Validate the name field
+            const nameInput = document.getElementById('name');
+            const nameRegex = /^[A-Za-z]+$/; // Only alphabets allowed
+            if (!nameRegex.test(nameInput.value.trim())) {
+                alert('Name should only contain alphabets.');
+                return;
+            }
+
+            // Validate the email field
+            const emailInput = document.getElementById('email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value.trim())) {
+                alert('Invalid email address.');
+                return;
+            }
+
+            // If both validations pass, proceed with the form submission
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => response.json())  // Parse the response as JSON
+                .then(data => alert('Success!', data))  // Use the parsed data
+                .catch(error => alert('Error!', error.message));
+        });
+
+    </script> -->
+
+</body>
+
+</html>
